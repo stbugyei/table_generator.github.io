@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="">
+    <title>Project_4</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1>HTML TABLE GENERATOR</h1>
+        </div>
+        <!--container-first-->
+        <div class="container_first">
+            <div class="container_first_item">
+                <form name='generateTable'>
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="Number of rows">Number of rows:</label></div>
+                        <div class="inputfield"><input type="number" id="rows"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="Number of col">Number of column:</label></div>
+                        <div class="inputfield"><input type="number" id="cols"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield"><label for="Table width in percentage">Table width in percentage:</label></div>
+                        <div class="inputfield"><input type="number" id="tablewidth"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="Border width in pixels">Border width in pixels:</label></div>
+                        <div class="inputfield"><input type="number" id="borderwidth"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="container_first_item">
+                <form>
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="font-type">Font type:</label></div>
+                        <div class="inputfield">
+                            <select id="font-type">
+                                <option value="Arial">Arial</option>
+                                <option value="Cursive">Cursive</option>
+                                <option value="Fantasy">Fantasy</option>
+                                <option value="Monospace">Monospace</option>
+                                <option value="Helvetica">Helvetica</option>                              
+                                <option value="Trebuchet MS">Trebuchet MS</option>
+                                <option value="tahoma">Tahoma</option>
+                                <option value="tangerine">Tangerine</option>
+                                <option value=" sans-serif"> sans-serif</option>                              
+                               <option value="times new roman">Times New Roman</option>
+                                <option value="Verdana">Verdana</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="font-weight">Font weight:</label></div>
+                        <div class="inputfield">
+                            <select id="font-weight">
+                                <option>normal</option>
+                                <option>bold</option>
+                                <option>bolder</option>
+                                <option>lighter</option>
+                                <option>100</option>
+                                <option>200</option>
+                                <option>300</option>
+                                <option>400</option>
+                                <option>500</option>
+                                <option>600</option>
+                                <option>700</option>
+                                <option>800</option>
+                                <option>900</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield"><label for="Text-align">Text align:</label></div>
+                        <div class="inputfield">
+                            <select id="Text-align">
+                                <option>center</option>
+                                <option>right</option>
+                                <option>left</option>
+                                <option>justify</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="font-size">Font size:</label></div>
+                        <div class="inputfield"><input type="number" id="font-size"></div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="container_first_item">
+                <form>
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="tbgcolor">Table background color:</label></div>
+                        <div class="inputfield"><input type="color" id="tbgcolor"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="hbgcolor">Head background color:</label></div>
+                        <div class="inputfield"><input type="color" id="hbgcolor"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield"><label for="bbgcolor">Body background color:</label></div>
+                        <div class="inputfield"><input type="color" id="bbgcolor"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="border-color">Border color:</label></div>
+                        <div class="inputfield"><input type="color" id="border-color"></div>
+                    </div>
+
+                    <div class="number-rows">
+                        <div class="labelfield "><label for="font-color">Font color:</label></div>
+                        <div class="inputfield"><input type="color" id="font-color"></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="container_second">
+            <button class="btn_generate">Generate Table</button>
+            <button class="btn_getcode">Get Code</button>
+            <button class="btn_collapse">Border collapse <input type="checkbox"  value="Border" id="checkbox"></button>
+            <button class="btn_stopautogen"> Stop Auto Generate </button>
+
+        </div>
+        <div class="container_third">
+        </div>
+        <div class="container_fourth">
+        </div>
+
+    </div>
+    <!--footer-top-->
+
+    <!--footer-bottom-->
+    <!-- <div class="footer_bottom">
+        <div class="icon_group">
+            <div class="bottom_icons">
+                <span class="twitter">Twitter</span>
+                <a href="#"><img src="./image/twitter-logo.png" class="footer_bottom--subimg"></a>
+            </div>
+            <div class="bottom_icons">
+                <div class="facebook">Facebook</div>
+                <a href="#"><img src="./image/facebook-logo.png" class="footer_bottom--subimg"></a>
+            </div>
+            <div class="bottom_icons">
+                <div class="vimeo">vimeo</div>
+                <a href="#"> <img src="./image/vimeo-icon-vector.png" class="footer_bottom--subimg"></a>
+
+            </div>
+            <div class="bottom_icons">
+                <div class="linkedin">Linkedin</div>
+                <a href="#"><img src="./image/linkedin-icon-logo-vector.png" class="footer_bottom--subimg"></a>
+            </div>
+            <div class="bottom_icons">
+                <div class="github">Github</div>
+                <a href="#"> <img src="./image/github-octocat-logo.jpg" class="footer_bottom--subimg"></a>
+            </div>
+            <div class="bottom_icons">
+                <span class="pinterest">Pinterest</span>
+                <a href="#"> <img src="./image/pinterest-button-logo-vector.png" class="footer_bottom--subimg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_text">
+        <h4>Copyright © 2019-2031 Stbugyei All rights reserved.</h4>
+    </div>-->
+</body>
+<script src="table.js"></script>
+
+</html>
