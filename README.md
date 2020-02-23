@@ -1,2 +1,1 @@
-# table_generator
- mini app that generates html
+https://stbugyei.github.io/table_generator.github.io/
